@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgb(123, 19, 72);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    background: #f5e3e3;
+}
+
+.logo {
+    border-radius: 10px;
+    /* width: 90px; */
+    height: 69px;
+    padding-left: 3px;
+}
+
+button {
+    border: none;
+    background: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 15px 40px;
+    background: #554edf;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.primary-btn1 {
+    padding: 15px 40px;
+    background: #554edf;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.secondary-btn {
+    padding: 15px 40px;
+    background: none;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+
+header {
+    height: 10vh;
+    line-height: 10vh;
+    /* padding: 0 20px; */
+}
+
+header img {
+    margin: 20px o;
+}
+
+header ul {
+    display: inline-block;
+}
+
+header ul li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header ul li a {
+    color: #000;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+
+header ul li a:hover {
+    color: #7fc142;
+}
+
+header i {
+    margin: 0 20px;
+}
+
+header button {
+    padding: 13px 40px;
+}
+
+header .navlinks span {
+    display: none;
+}
+
+@media(max-width:700px) {
+    header ul {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #009f7f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        text-align: center;
+        z-index: 9;
+        /*  only screen and  */
+    }
+
+    header ul li {
+        display: block;
+    }
+
+    header li a {
+        color: white;
+    }
+
+    header i {
+        color: white;
+    }
+
+    header .navlinks span {
+        color: black;
+        display: block;
+        cursor: pointer;
+        line-height: 10vh;
+        font-size: 25px;
+
+    }
+}
+
+/* .back{
+    height: 400px;
+} */
+
+
+/* home page slide bar */
+.home {
+    height: 100vh;
+    color: #fff;
+}
+
+.home img {
+    width: 100%;
+    height: 100vh;
+}
+
+.home .text {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+.home .text h1 {
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.home p {
+    margin: 20px 0;
+    color: #fff;
+}
+
+.home button {
+    margin-right: 0 20px;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    /* for black background to next prev*/
+    color: #fff;
+}
+
+.owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-nav .owl-next {
+    right: 0;
+}
+
+/* home page slide bar */
+
+
+/* -- what we done -- */
+.works {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    /*change later*/
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    /* padding: 0; */
+    padding: 20px 12px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+body{
+    background-color: #deddeb;
+}
+
+
+.proj-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.proj-card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.proj-card:hover{
+    transform: translateY(-20px);
+}
+
+.proj-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content{
+   padding: 20px; 
+}
+
+.card-content h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button{
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.card-button:hover{
+    color: #191658;
+}
+
+.text h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* service section */
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card{
+    width: 325px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover{
+    transform: translateY(-15px);
+}
+
+.service-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service-content{
+   padding:5px; 
+}
+
+.service-content h1{
+    font-size: 24px;
+    /* margin-bottom: 10px; */
+}
+
+.service-content p{
+    font-size: 15px;
+    color: #666;
+    /* margin-bottom: 2px; */
+}
+
+.service-button{
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.service-button:hover{
+    color: #191658;
+}
+
+.service-text h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top:100px;
+}
+/* .service-text{
+    border: 3px solid blue;
+    border-radius: 20px;
+} */
+
+/* service section */
